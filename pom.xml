@@ -21,7 +21,7 @@
     <sonar.dependencyCheck.summarize>true</sonar.dependencyCheck.summarize>
     <sonar.host.url>http://34.126.215.83:9000/</sonar.host.url>
     <sonar.login>admin</sonar.login>
-    <sonar.password>akdmin</sonar.password> 
+    <sonar.password>admin</sonar.password> 
     
     <!-- JaCoCo Properties -->
     <jacoco.version>0.8.6</jacoco.version>
@@ -59,11 +59,11 @@
   <distributionManagement>
     <snapshotRepository>
        <id>nexus</id>
-           <url>http://34.131.113.203:8081/repository/maven-snapshots/</url>
+           <url>http://34.126.215.83:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
     <repository>
       <id>nexus</id>
-      <url>http://34.131.113.203:8081/nexus/content/repositories/releases</url>
+      <url>http://34.126.215.83:8081/nexus/content/repositories/releases</url>
     </repository>
   </distributionManagement>
   
@@ -125,9 +125,9 @@
                 <version>1.2.1-0</version>
                 <configuration>
                     <!-- If ZAP is running on localhost, there is no need to define zapHost -->
-                    <zapHost>http://34.86.51.193</zapHost>
+                    <zapHost>http://34.126.215.83</zapHost>
                     <zapPort>8080</zapPort>
-                    <targetUrl>http://34.69.103.139:8098/rest/demo</targetUrl>
+                    <targetUrl>http://34.126.215.83:8098/rest/demo</targetUrl>
                 </configuration>
             </plugin>
             <!-- <plugin>
@@ -136,8 +136,8 @@
 	               <version>1.2.1-0</version>
 	               <configuration>
 		               <zapPort>8080</zapPort>
-			       <zapHost>http://34.86.51.193</zapHost>
-		               <targetUrl>http://34.86.51.193:8098/rest/demo</targetUrl>
+			       <zapHost>http://34.126.215.83:</zapHost>
+		               <targetUrl>http://34.126.215.83:8098/rest/demo</targetUrl>
 		               <shouldRunWithDocker>true</shouldRunWithDocker>
                         </configuration>
             </plugin> -->
